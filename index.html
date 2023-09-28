@@ -165,13 +165,15 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
     <div class="column is-full-width">
-        <h2 class="title is-3">Subcellular Structure Prediction</h2>
+        <h2 class="title is-3">New Paradigm of Face Anti-Spoofing</h2>
         <img src="static/images/SSP.png" style="width: 85%" alt>
         <div class="content has-text-justified">
         <p>
-          <b>Illustration of subcellular structure prediction (SSP).</b>
-          SSP aims to predict the 3D fluorescent images of multiple subcellular structures from a 3D transmitted-light image.
-          This task faces two challenges, <i>i.e.</i> partial labeling and multi-scale.
+          <b>Illustration of face anti-spoofing (FAS) from single-shot binocular near-intrared (NIR) Images.</b>
+          (a) Multi-shots FAS.
+          (b) Single-shot depth-based FAS.
+          (c) Our single-shot binocular disparity-based FAS.
+          Note that the same colored points are the corresponding maximum attention weight points between the left and right images to emphasize our disparity-based method.
         </p>
         </div>
     </div>
@@ -184,15 +186,12 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
     <div class="column is-full-width">
-        <h2 class="title is-3">Method Overview</h2>
-        <img src="static/images/overview.png" style="width: 100%" alt>
+        <h2 class="title is-3">Interpretable FAS Transformer</h2>
+        <img src="static/images/ifast.png" style="width: 100%" alt>
         <div class="content has-text-justified">
         <p>
-          <b>Overview of the proposed method.</b>
-          (a) Comparison of two mainstream solutions (i.e. Multi-Net and Multi-Head) and the proposed method (i.e. RepMode) for SSP.
-          (b) Illustration of our RepMode which includes two key components, i.e. the proposed MoDE block and GatRep.
-          (c) Diagram of how RepMode dynamically organizes its parameters in a MoDE block.
-          Note that the gray region denotes the convex hull decided by the expert kernels, and the convex hull is the area where the task-specific kernels would be situated.
+          <b>Training pipeline of the proposed Interpretable FAS Transformer (IFAST).</b>
+          The input of IFAST is a binocular NIR face image (left and right image). First, an estimated disparity map is obtained by the disparity estimation Transformer. Then, the disparity map and the left image are fed to the confidence map generator. The confidence maps in terms of real face and plane attack are used to complete the classification of FAS. The proposed dual-teacher distillation module is used to support the weakly supervised training.
         </p>
         </div>
     </div>
@@ -209,17 +208,18 @@
         <img src="static/images/visualization.png" style="width: 100%" alt>
         <div class="content has-text-justified">
         <p>
-          <b>Examples of the prediction results on the test set.</b>
-          These images are from
-          (a) microtubule,
-          (b) actin filament,
-          (c) DNA,
-          (e) tight junction,
-          (f) actomyosin bundle,
-          (g) cell membrane, and
-          (h) endoplasmic reticulum.
-          We compare the predictions of our RepMode with the ones of TGNet (a competitive method).
-          Note that the dotted boxes indicate the major prediction difference.
+          <b>Visual comparison of the disparity maps predicted by different methods for estimating the depth of real faces.</b>
+          (a) The left image.
+          (b) StereoNet.
+          (c) PSMNet.
+          (d) GwcNet.
+          (e) STTR.
+          (f) PASMNet.
+          (g) Dual-Net.
+          (h) BM.
+          (i) SGBM.
+          (j) IFAST.
+          The comparison show that Our IFAST can produce higher visibility.
         </p>
         </div>
     </div>
@@ -232,11 +232,11 @@
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>
-    @article{zhou2022repmode,
-      title  ={RepMode: Learning to Re-parameterize Diverse Experts for Subcellular Structure Prediction},
-      author ={Zhou, Donghao and Gu, Chunbin and Xu, Junde and Liu, Furui and Wang, Qiong and Chen, Guangyong and Heng, Pheng-Ann},
-      journal={arXiv preprint arXiv:2212.10066},
-      year   ={2022}
+    @article{placeholder,
+      title  ={placeholder},
+      author ={placeholder},
+      journal={placeholder},
+      year   ={2023}
     }
     </code></pre>
   </div>
