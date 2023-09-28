@@ -1,4 +1,4 @@
-# RepMode - GitHub Pages
+# IFAST-BNI - GitHub Pages
 
 
-https://correr-zhou.github.io/RepMode
+https://IFAST-BNI.github.io/
